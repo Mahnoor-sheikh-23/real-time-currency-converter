@@ -1,0 +1,104 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-y: hidden; */
+}
+body{
+    background-color: rgb(225, 109, 109);
+    font-family: Arial, sans-serif;
+}
+.box{
+    background: antiquewhite;
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 10px;
+    padding: 30px;
+}
+.box h1{
+    text-align: center;
+    font-weight: 600;
+    color: #124089;
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+
+.amount, .to-ammount, .from-currency, .to-currency{
+    display: block;
+    width: 70%;
+    margin: 0 auto 20px auto;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+
+button{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+button img{
+    width: 65px;
+    height: 39px;
+    border-radius: 20px;
+}
+
+.rate-container{
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.rate-container p{
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .box{
+        width: 95%;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .box h1{
+        font-size: 2rem;
+        padding-bottom: 20px;
+    }
+
+    .amount, .to-ammount, .from-currency, .to-currency{
+        width: 85%;
+    }
+
+    .rate-container{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .box h1{
+        font-size: 1.5rem;
+        padding-bottom: 15px;
+    }
+
+    .amount, .to-ammount, .from-currency, .to-currency{
+        width: 90%;
+    }
+
+    button img{
+        width: 50px;
+        height: 30px;
+    }
+
+    .rate-container{
+        font-size: 1rem;
+    }
+}
+
